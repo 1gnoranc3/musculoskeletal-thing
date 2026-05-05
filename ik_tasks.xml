@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40500">
+  <IKTaskSet name="ik_tasks">
+    <objects>
+
+      <!-- ── ТАЗ (критичные маркеры, высокий вес) ── -->
+      <IKMarkerTask name="RASI">  <apply>true</apply> <weight>20</weight> </IKMarkerTask>
+      <IKMarkerTask name="LASI">  <apply>true</apply> <weight>20</weight> </IKMarkerTask>
+      <IKMarkerTask name="RPSI">  <apply>true</apply> <weight>20</weight> </IKMarkerTask>
+      <IKMarkerTask name="LPSI">  <apply>true</apply> <weight>20</weight> </IKMarkerTask>
+
+      <!-- ── КЛАСТЕРЫ БЕДРА (определяют сгибание/приведение бедра) ── -->
+      <IKMarkerTask name="RTH1">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="RTH2">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="RTH3">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTH1">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTH2">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTH3">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+
+      <!-- ── КЛАСТЕРЫ ГОЛЕНИ ── -->
+      <IKMarkerTask name="RTB1">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="RTB2">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="RTB3">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTB1">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTB2">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTB3">  <apply>true</apply> <weight>10</weight> </IKMarkerTask>
+
+      <!-- ── КОЛЕНО ── -->
+      <IKMarkerTask name="RLFC">  <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="RMFC">  <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="LLFC">  <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="LMFC">  <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+
+      <!-- ── ГОЛЕНОСТОП ── -->
+      <IKMarkerTask name="RLMAL"> <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="RMMAL"> <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="LLMAL"> <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="LMMAL"> <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+
+      <!-- ── СТОПА ── -->
+      <IKMarkerTask name="RCAL">  <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="RTOE">  <apply>true</apply> <weight>3</weight> </IKMarkerTask>
+      <IKMarkerTask name="RMT5">  <apply>true</apply> <weight>3</weight> </IKMarkerTask>
+      <IKMarkerTask name="LCAL">  <apply>true</apply> <weight>5</weight> </IKMarkerTask>
+      <IKMarkerTask name="LTOE">  <apply>true</apply> <weight>3</weight> </IKMarkerTask>
+      <IKMarkerTask name="LMT5">  <apply>true</apply> <weight>3</weight> </IKMarkerTask>
+
+      <!-- ── ТУЛОВИЩЕ / ПЛЕЧИ (меньший вес — не критично для нижних конечностей) ── -->
+      <IKMarkerTask name="C7">    <apply>true</apply> <weight>3</weight> </IKMarkerTask>
+      <IKMarkerTask name="CLAV">  <apply>true</apply> <weight>3</weight> </IKMarkerTask>
+      <IKMarkerTask name="RACR">  <apply>true</apply> <weight>2</weight> </IKMarkerTask>
+      <IKMarkerTask name="LACR">  <apply>true</apply> <weight>2</weight> </IKMarkerTask>
+      <IKMarkerTask name="RASH">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+      <IKMarkerTask name="RPSH">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+      <IKMarkerTask name="LASH">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+      <IKMarkerTask name="LPSH">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+
+      <!-- ── ЛОКТИ (минимальный вес) ── -->
+      <IKMarkerTask name="RLEL">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+      <IKMarkerTask name="RMEL">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+      <IKMarkerTask name="LLEL">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+      <IKMarkerTask name="LMEL">  <apply>true</apply> <weight>1</weight> </IKMarkerTask>
+
+    </objects>
+    <groups />
+  </IKTaskSet>
+</OpenSimDocument>
